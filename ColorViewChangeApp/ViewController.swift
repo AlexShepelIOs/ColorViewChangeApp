@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var rgbView: UIView!
     
     @IBOutlet weak var redPosition: UILabel!
@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         rgbView.layer.cornerRadius = 25
-       // rgbView.backgroundColor = UIColor(displayP3Red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: 1)
         
         redSlider.value = 0.00
         redSlider.minimumValue = 0.00
@@ -40,17 +40,13 @@ class ViewController: UIViewController {
         blueSlider.maximumValue = 1.00
         blueSlider.minimumTrackTintColor = .blue
     }
-
-    @IBAction func resSliderAction() {
-
-    }
-    @IBAction func greenSliderAction() {
+    @IBAction func rgbSliderChanged() {
+        redPosition.text = String(format: "%.2f", redSlider.value)
+        greenPosition.text = String(format: "%.2f", greenSlider.value)
+        bluePosition.text = String(format: "%.2f", blueSlider.value)
         
+        rgbView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
-    @IBAction func blueSliderAction() {
-        
-    }
-    
     
 }
 
