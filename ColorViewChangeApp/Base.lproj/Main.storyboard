@@ -95,9 +95,6 @@
                                                 </connections>
                                             </slider>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="182" id="VF9-JD-W3g"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
