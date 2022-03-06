@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         blueSlider.maximumValue = 1.00
         blueSlider.minimumTrackTintColor = .blue
     }
+    
     @IBAction func rgbSliderChanged() {
         redPosition.text = String(format: "%.2f", redSlider.value)
         greenPosition.text = String(format: "%.2f", greenSlider.value)
