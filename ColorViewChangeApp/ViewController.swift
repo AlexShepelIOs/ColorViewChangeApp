@@ -19,25 +19,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         rgbView.layer.cornerRadius = 25
+        rgbView.backgroundColor = UIColor(
+            red: 0.00,
+            green: 0.00,
+            blue: 0.00,
+            alpha: 1
+        )
         
         redSlider.value = 0.00
-        redSlider.minimumValue = 0.00
-        redSlider.maximumValue = 1.00
         redSlider.minimumTrackTintColor = .red
         
         greenSlider.value = 0.00
-        greenSlider.minimumValue = 0.00
-        greenSlider.maximumValue = 1.00
         greenSlider.minimumTrackTintColor = .green
         
         blueSlider.value = 0.00
-        blueSlider.minimumValue = 0.00
-        blueSlider.maximumValue = 1.00
         blueSlider.minimumTrackTintColor = .blue
     }
     
@@ -46,8 +45,11 @@ class ViewController: UIViewController {
         greenPosition.text = String(format: "%.2f", greenSlider.value)
         bluePosition.text = String(format: "%.2f", blueSlider.value)
         
-        rgbView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        rgbView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value), alpha: 1
+        )
     }
-    
 }
 
