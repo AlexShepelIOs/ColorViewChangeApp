@@ -19,10 +19,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-fX-CnM">
                                 <rect key="frame" x="27.666666666666657" y="53" width="335" height="185"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="aOn-xb-cYT"/>
-                                    <constraint firstAttribute="width" secondItem="0nb-fX-CnM" secondAttribute="height" multiplier="67:37" id="fn1-KU-2wh"/>
-                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-Ka-MKF">
                                 <rect key="frame" x="27.666666666666657" y="284" width="335" height="106"/>
